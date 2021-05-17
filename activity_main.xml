@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Text To Speech"
+        android:textSize="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/judul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dan Speech To Text"
+        android:textSize="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/ttsEng"
+        android:layout_below="@id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text To Speech English"
+        android:onClick="playTTSENG"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/ttsIND"
+        android:layout_below="@+id/ttsEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text To Speech Indonesia"
+        android:onClick="playTTSID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/STT"
+        android:layout_below="@+id/ttsIND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speech To Text"
+        android:onClick="playSTT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
